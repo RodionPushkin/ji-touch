@@ -1,0 +1,89 @@
+@media screen and (min-width: 300px) and (max-width: 639px){
+    .container{
+        width: 100%;
+        max-width: none;
+        padding: 0 10px;
+        margin: 0 auto;
+    }
+    .aside{
+        bottom: 60px;
+    }
+    .aside .container{
+        justify-content: center;
+    }
+    .main .circle{
+        bottom: 130px;
+        width: 300px;
+        height: 300px;
+    }
+    .main .wrapp h1{
+        font-size: 50px;
+        line-height: 60px;
+        text-align: center;
+        letter-spacing: 0.25em;
+        white-space: normal;
+    }
+    .main .wrapp p{
+        margin-top: 35px;
+        margin-bottom: 36px;
+        font-size: 19px;
+        line-height: 23px;
+        letter-spacing: 0.11em;
+        white-space: nowrap;
+    }
+    .main .wrapp form input{
+        font-size: 12px;
+        line-height: 14px;
+        letter-spacing: 0.05em;
+        padding: 15px 9px 14px 9px;
+    }
+    .header{
+        padding-top: 30px;
+    }
+    .button{
+        padding: 12px 26px 12px 29px;
+    }
+    .button::after{
+        transform: translate(4px,4px);
+    }
+    .header .icon{
+        display: block;
+    }
+    .header a:not(.logo,.icon){
+        display: none;
+    }
+}
+@media screen and (min-width: 640px) and (max-width: 999px){
+    .container{
+        width: 100%;
+        max-width: 600px;
+        margin: 0 auto;
+    }
+    .main .circle{
+        bottom: 30px;
+        width: 498px;
+        height: 498px;
+    }
+    .main .wrapp h1{
+        font-size: 60px;
+        line-height: 60px;
+        letter-spacing: 0.25em;
+    }
+    .main .wrapp p{
+        margin-top: 40px;
+    }
+}
+@media screen and (min-width: 1000px) and (max-width: 1599px){
+    .container{
+        width: 100%;
+        max-width: 960px;
+        margin: 0 auto;
+    }
+}
+@media screen and (min-width: 1600px){
+    .container{
+        width: 100%;
+        max-width: 1480px;
+        margin: 0 auto;
+    }
+}

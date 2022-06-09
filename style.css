@@ -1,0 +1,150 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+body{
+    width: 100vw;
+    min-height: 100vh;
+    overflow-x: hidden;
+    overflow-y: overlay;
+    font-family: 'Fira Sans', sans-serif;
+}
+a{
+    all: unset;
+    cursor: pointer;
+}
+a:visited{
+    color: initial;
+}
+.container{
+    width: 100%;
+    max-width: 1480px;
+    margin: 0 auto;
+}
+input{
+    all: unset;
+    padding: 9px 25px 9px 25px;
+    border: 1px solid #282828;
+    width: 100%;
+    max-width: 267px;
+}
+.button{
+    display: flex;
+    padding: 9px 25px 9px 25px;
+    border: 1px solid #282828;
+    position: relative;
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.05em;
+    color: #FFFFFF;
+    cursor: pointer;
+    background: none;
+}
+.button::after{
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    transform: translate(6px,6px);
+    background: #0077A0;
+    transition: 0.2s;
+}
+.button:hover::after{
+    transform: none;
+    background: #EF7F1A;
+}
+.button:hover{
+    transition: 0.4s;
+    background: #EF7F1A;
+}
+.header{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding-top: 50px;
+}
+.header .logo{
+    margin-right: auto;
+}
+.header .button{
+    margin-left: 52px;
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: 0.05em;
+}
+.header .icon{
+    display: none;
+}
+.aside{
+    width: 100vw;
+    position: absolute;
+    left: 0;
+    bottom: 50px;
+}
+.aside .container{
+    display: flex;
+    justify-content: flex-end;
+    gap: 26px;
+}
+.main .circle{
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 80vh;
+    width: 80vh;
+    border-radius: 50%;
+    background: #FFFFFF;
+    box-shadow: 0px -80px 100px rgba(239, 127, 26, 0.2);
+}
+.main .wrapp{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.main .wrapp h1{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 80px;
+    line-height: 80px;
+    letter-spacing: 0.25em;
+    color: #282828;
+    word-break: keep-all;
+    white-space: nowrap;
+}
+.main .wrapp p{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 26px;
+    line-height: 31px;
+    letter-spacing: 0.11em;
+    color: #282828;
+    margin-top: 58px;
+    margin-bottom: 26px;
+}
+.main .wrapp form{
+    display: flex;
+}
+.main .wrapp form input{
+    border-right: none;
+}
+.main .wrapp form .button{
+    min-width: 140px;
+}
